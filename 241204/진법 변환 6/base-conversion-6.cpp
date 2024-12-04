@@ -26,7 +26,7 @@ int main() {
     int a = decimal;
 
     while(1){
-        if(a % num3 > 10){
+        if(a % num3 >= 10){
             output.push_back('a' + a % num3 - 10);
         }
         else{
