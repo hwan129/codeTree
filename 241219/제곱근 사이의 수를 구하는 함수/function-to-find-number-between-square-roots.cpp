@@ -13,7 +13,7 @@ int main() {
 
     num = floor(a_sqrt) - floor(b_sqrt);
 
-    cout << num;
+    cout << abs(num);
 
 
 
