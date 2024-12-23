@@ -23,10 +23,12 @@ int main() {
     }
 
     int min = 0, scnd = 0, count = 0;
-    int mini[] = {100, 99};
+    int mini[] = {10000000, 9999999};
 
     for(int i = 0; i < 7; i++){
         if(score[i] < mini[0]){
+            scnd = min;
+            mini[1] = score[min];
             min = i;
             mini[0] = score[i];
         } else if(score[i] < mini[1] && score[i] > mini[0]){
